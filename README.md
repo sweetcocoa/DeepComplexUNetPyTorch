@@ -61,6 +61,8 @@ Comparing the two(Paper's, Mine) values above is inappropriate for the following
 
 - \* The Architecture of model is slightly different from the original paper. (Such as kernel size of convolution filters) 
 
+- MelSpec
+![img](./assets/images/melspectrogram.png)
 
 ## Notes
 ---
@@ -71,8 +73,8 @@ Comparing the two(Paper's, Mine) values above is inappropriate for the following
 ---
 | Mixture | Estimated Speech | GT(Clean Speech) |
 | --------|-----------|-------------|
-|[mixture1.wav]()|[Estimated1.wav]()|[GroundTruth1.wav]()|
-|[mixture2.wav]()|[Estimated2.wav]()|[GroundTruth2.wav]()|
+|[mixture1.wav](./assets/noisy/p232_001.flac?raw=true)|[Estimated1.wav](./assets/estimated/p232_001.flac?raw=true)|[GroundTruth1.wav](./assets/gt/p232_001.flac?raw=true)|
+|[mixture2.wav](./assets/noisy/p232_005.flac?raw=true)|[Estimated2.wav](./assets/estimated/p232_005.flac?raw=true)|[GroundTruth2.wav](./assets/gt/p232_005.flac?raw=true)|
 
 
 ## Contact
