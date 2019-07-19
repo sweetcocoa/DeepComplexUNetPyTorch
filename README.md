@@ -41,6 +41,7 @@ python train_dcunet.py --batch_size 12 \
                        --train_noise /path/to/train/noisy/speech/ \
                        --test_signal /path/to/test/clean/speech/ \
                        --test_noise /path/to/test/noisy/speech/ \
+                       --ckpt /path/to/save/checkpoint.pth \
                        --num_step 50000 \
                        --validation_interval 500 \
                        --complex
@@ -61,15 +62,15 @@ python estimate_directory.py --input_dir /path/to/noisy/speech/ \
 ---
 | PESQ(cRMCn/cRMRn)   | Paper | Mine* |
 | -------------------- | ----- | ---- |
-| DCUNet - 10     |  **2.72**/2.51  | 3.34/**3.36**  |
-| DCUNet - 20| **3.24**/2.74  | 3.35/**3.38** |
+| DCUNet - 10     |  **2.72**/2.51  | 3.03/**3.07**  |
+| DCUNet - 20| **3.24**/2.74  | **3.12**/3.11 |
 
 - *cRMCn* : Complex-valued input/Output
 - *cRMRn* : Real-valued input/Output
 
 Comparing the two(Paper's, Mine) values above is inappropriate for the following reasons:
 
-- \* The PESQ I calculated is inaccurate because I calculated only one second from the beginning of the test set, not the whole wav. (It is not PESQ, It's pesudo-PESQ)
+- \* I did not use matlab code that the author used to calculate pesq, but instead used [pypesq](https://github.com/vBaiCai/python-pesq).
 
 - \* The Architecture of model is slightly different from the original paper. (Such as kernel size of convolution filters) 
 
