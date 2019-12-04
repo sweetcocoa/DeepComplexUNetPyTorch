@@ -1,6 +1,9 @@
 # Deep Complex U-Net
 ---
-Unofficial PyTorch Implementation of [Phase-Aware Speech Enhancement with Deep Complex U-Net](https://openreview.net/forum?id=SkeRTsAcYm), (H. Choi et al., 2018) 
+**Unofficial** PyTorch Implementation of [Phase-Aware Speech Enhancement with Deep Complex U-Net](https://openreview.net/forum?id=SkeRTsAcYm), (H. Choi et al., 2018) 
+> **Note**
+>
+> This is NOT author's implementation.
 
 
 ## Architecture
